@@ -17,7 +17,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+.link {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
 .App-link {
   color: #61dafb;
 }

@@ -1,0 +1,70 @@
+$magenta: white;
+$green: #60a568;
+$greenLight: lighten($green, 10%);
+
+@mixin dotBg($dotColor, $bgColor, $size) {
+  background-color: $bgColor;
+  background-image: radial-gradient($dotColor 15%, transparent 16%),
+    radial-gradient($dotColor 15%, transparent 16%);
+  background-size: $size * 2 $size * 2;
+  background-position: 0 0, $size $size;
+}
+.form-body {
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+body {
+  color: black;
+  background-color: $magenta;
+  padding: 20px 30px;
+  font-family: sans-serif;
+}
+.detailBox {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid bisque;
+  box-shadow: #000;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: left;
+  padding: 5px;
+  margin-top: 20px;
+}
+.color {
+  width: 15px;
+  height: 15px;
+}
+p {
+  font-size: 14px;
+}
